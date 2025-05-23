@@ -1,8 +1,7 @@
   # 🐢 TurtleBot3 Gazebo Fortress Simulation
 
 ROS 2 package for simulating TurtleBot3 in Gazebo Fortress with Ignition Bridge.
-
-
+*"Making robot simulation as easy as blinking!"* 😉
 ## Prerequisites
 
 ### System Requirements
@@ -54,7 +53,7 @@ ROS 2 package for simulating TurtleBot3 in Gazebo Fortress with Ignition Bridge.
        ros2 run turtlebot3_teleop teleop_keyboard --ros-args --remap /cmd_vel:=/cmd_vel_unstamped
     ```
  ###  🚨 for any problem you can contact us on whatsapp group 
- ### 🛠️🤖 ENJOY BUILDING 
+ ### 🛠️🤖 ENJOY BUILDING and make sure to click on star so you can find it easily 😅
     
 
 
