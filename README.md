@@ -21,9 +21,17 @@ ROS 2 package for simulating TurtleBot3 in Gazebo Fortress with Ignition Bridge.
    ```bash
    git clone https://github.com/Diwakar-Saini/turtlebot3.git
    ```
-3. DOWNLOAD THIS MODEL FOLDER ![Model](https://drive.google.com/drive/folders/16YtcjzQiOeX3XTH8uJbhHMasY9YnmX0T?usp=sharing)  
+3. DOWNLOAD THIS MODEL FOLDER [model](https://drive.google.com/drive/folders/16YtcjzQiOeX3XTH8uJbhHMasY9YnmX0T?usp=sharing)  
 4. Insert the models inside the turtlebot3_gazebo package
-5. NOW INSTALL THIS PACKAGE IT WILL WORK AS BRIDGE
+   Ensure models are in turtlebot3_gazebo/models/
+   📂 Package Structure
+   turtlebot3_gazebo/
+    ├── launch/          # Launch configurations
+    ├── worlds/          # Simulation environments
+    ├── models/          # 3D assets and models
+    ├── rviz/            # Visualization configs
+    └── config/          # Parameter files
+6. NOW INSTALL THIS PACKAGE IT WILL WORK AS BRIDGE
    ``` bash
        sudo apt update && sudo apt install -y ros-humble-ros-ign ros-humble-ros-ign-bridge ros-humble-ros-ign-gazebo ros-humble-ros-ign-gazebo-demos ros-humble-ros-ign-image ignition-fortress
    ```
