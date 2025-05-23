@@ -21,8 +21,8 @@ ROS 2 package for simulating TurtleBot3 in Gazebo Fortress with Ignition Bridge.
    ```bash
    git clone https://github.com/Diwakar-Saini/turtlebot3.git
    ```
-3. DOWNLOAD THIS MODEL FOLDER [model](https://drive.google.com/file/d/1jzBQDj69v0LL9O5XnWncsXz-BuB_d52D/view?usp=sharing)  
-4. Insert the models inside the turtlebot3_gazebo package
+3. Download this model folder [model](https://drive.google.com/file/d/1jzBQDj69v0LL9O5XnWncsXz-BuB_d52D/view?usp=sharing)  
+4. Insert the extracted models  inside the turtlebot3_gazebo package
    Ensure models are in turtlebot3_gazebo/models/
   #### 📂 Package Structure
    ```bash
@@ -33,17 +33,17 @@ ROS 2 package for simulating TurtleBot3 in Gazebo Fortress with Ignition Bridge.
           ├── rviz/            # Visualization configs
           └── config/          # Parameter files
    ```
-6. NOW INSTALL THIS PACKAGE IT WILL WORK AS BRIDGE
+6. Now please install ros-ign bridge:
    ``` bash
        sudo apt update && sudo apt install -y ros-humble-ros-ign ros-humble-ros-ign-bridge ros-humble-ros-ign-gazebo ros-humble-ros-ign-gazebo-demos ros-humble-ros-ign-image ignition-fortress
    ```
-7. NOW BUILD THE PACKAGE
+7. Now all setup is done we can build the package now:
    ``` bash
        sudo apt-get install ros-${ROS_DISTRO}-dynamixel-sdk
        rosdep install --from-paths src --ignore-src -r -y
        colcon build
    ```
-8. AFTER THIS U CAN RUN THIS ATER SOURCING IT
+8. Now we will look it is it really running on our system or not :)
    ```BASH
       source install/setup.bash
       export TURTLEBOT3_MODEL=burger
