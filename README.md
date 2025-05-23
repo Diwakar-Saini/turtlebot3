@@ -21,10 +21,10 @@ ROS 2 package for simulating TurtleBot3 in Gazebo Fortress with Ignition Bridge.
    ```bash
    git clone https://github.com/Diwakar-Saini/turtlebot3.git
    ```
-3. DOWNLOAD THIS MODEL FOLDER [model](https://drive.google.com/drive/folders/16YtcjzQiOeX3XTH8uJbhHMasY9YnmX0T?usp=sharing)  
+3. DOWNLOAD THIS MODEL FOLDER [model](https://drive.google.com/file/d/1jzBQDj69v0LL9O5XnWncsXz-BuB_d52D/view?usp=sharing)  
 4. Insert the models inside the turtlebot3_gazebo package
    Ensure models are in turtlebot3_gazebo/models/
-  # 📂 Package Structure
+  #### 📂 Package Structure
    ```bash turtlebot3_gazebo/
           ├── launch/          # Launch configurations
           ├── worlds/          # Simulation environments
