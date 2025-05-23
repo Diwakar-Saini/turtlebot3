@@ -18,7 +18,7 @@ ROS 2 package for simulating TurtleBot3 in Gazebo Fortress with Ignition Bridge.
    ```
 2. CLONE THE PACKAGE
    ```bash
-   git clone
+   git clone https://github.com/Diwakar-Saini/turtlebot3.git
    ```
 3. DOWNLOAD THIS MODELS
    ```       ```
