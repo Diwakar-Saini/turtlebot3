@@ -1,1 +1,20 @@
-# turtlebot3
+# turtlebot3 for mac user gazebo fortress{ignition6}
+# TurtleBot3 Gazebo Fortress Simulation
+
+ROS 2 package for simulating TurtleBot3 in Gazebo Fortress with Ignition Bridge.
+
+## Prerequisites
+
+### System Requirements
+- **Ubuntu 22.04** (Recommended)
+- **ROS 2 Humble** (Installed and sourced)
+- **Gazebo Fortress** (Ignition Gazebo)
+
+### Dependencies Installation
+
+1. Install ROS 2 dependencies:
+   ```bash
+   sudo apt update
+   sudo apt install ros-humble-desktop ros-humble-gazebo-ros-pkgs
+   ```
+   
