@@ -29,6 +29,6 @@ ROS 2 package for simulating TurtleBot3 in Gazebo Fortress with Ignition Bridge.
    ```
 7. NOW BUILD THE PACKAGE
    ``` bash
-       colcon bild
+       colcon build
    ```
 
