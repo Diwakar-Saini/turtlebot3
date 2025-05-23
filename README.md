@@ -20,8 +20,8 @@ ROS 2 package for simulating TurtleBot3 in Gazebo Fortress with Ignition Bridge.
    ```bash
    git clone https://github.com/Diwakar-Saini/turtlebot3.git
    ```
-3. DOWNLOAD THIS MODELS
-   ```       ```
+3. DOWNLOAD THIS MODEL FOLDER 
+   `https://drive.google.com/drive/folders/16YtcjzQiOeX3XTH8uJbhHMasY9YnmX0T?usp=sharing `
 4. Insert the models inside the turtlebot3_gazebo package
 5. NOW INSTALL THIS PACKAGE IT WILL WORK AS BRIDGE
    ``` bash
@@ -33,4 +33,45 @@ ROS 2 package for simulating TurtleBot3 in Gazebo Fortress with Ignition Bridge.
        rosdep install --from-paths src --ignore-src -r -y
        colcon build
    ```
+8. AFTER THIS U CAN RUN THIS ATER SOURCING IT
+   ```BASH
+      source install/setup.bash
+      export TURTLEBOT3_MODEL=burger
+      ros2 launch turtlebot3_gazebo empty_world.launch.py     
+   ```
+9. for teleop use this cmd
+    ```bash
+       ros2 run turtlebot3_teleop teleop_keyboard --ros-args --remap /cmd_vel:=/cmd_vel_unstamped
+    ```
+   # 🐢 TurtleBot3 Gazebo Fortress Simulation
+
+![TurtleBot3 Simulation](https://via.placeholder.com/800x400.png?text=TurtleBot3+Gazebo+Simulation)  
+*Simulation preview (replace with actual screenshot)*
+
+## 📌 Overview
+ROS 2 package for simulating TurtleBot3 in Gazebo Fortress with Ignition Bridge integration. This package provides realistic simulation environments for TurtleBot3 Burger/Waffle models with complete sensor suites.
+
+## 🚀 Quick Start
+
+```bash
+# Clone repository
+git clone https://github.com/Diwakar-Saini/turtlebot3.git
+cd turtlebot3
+
+# Install dependencies (one command)
+sudo apt update && sudo apt install -y \
+    ros-humble-desktop \
+    ros-humble-gazebo-ros-pkgs \
+    ros-humble-ros-ign \
+    ros-humble-ros-ign-bridge \
+    ignition-fortress
+
+# Build package
+rosdep install --from-paths src --ignore-src -r -y
+colcon build --symlink-install
+
+# Launch simulation
+source install/setup.bash
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_gazebo empty_world.launch.py
 
