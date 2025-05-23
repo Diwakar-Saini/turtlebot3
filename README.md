@@ -16,4 +16,14 @@ ROS 2 package for simulating TurtleBot3 in Gazebo Fortress with Ignition Bridge.
    sudo apt update
    sudo apt install ros-humble-desktop ros-humble-gazebo-ros-pkgs
    ```
-   
+2. CLONE THE PACKAGE
+   ```bash
+   git clone
+   ```
+3. DOWNLOAD THIS MODELS
+   ```       ```
+4. Insert the models inside the turtlebot3_gazebo package
+5. NOW BUILD THE PACKAGE
+   ``` bash
+       colcon bild
+    ```
