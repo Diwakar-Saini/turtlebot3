@@ -40,6 +40,7 @@ ROS 2 package for simulating TurtleBot3 in Gazebo Fortress with Ignition Bridge.
    ``` bash
        sudo apt-get install ros-${ROS_DISTRO}-dynamixel-sdk
        rosdep install --from-paths src --ignore-src -r -y
+       cd turtlebot3
        colcon build
    ```
 8. Now we will look it is it really running on our system or not :)
