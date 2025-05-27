@@ -49,6 +49,7 @@ ROS 2 package for simulating TurtleBot3 in Gazebo Fortress with Ignition Bridge.
       export TURTLEBOT3_MODEL=burger
       ros2 launch turtlebot3_gazebo empty_world.launch.py     
    ```
+ {SEE GUYS YOU MAY HAVE A PROBLEM WHILE PUBLISHING TO /cmd_vel INSTEAD OF THAT, PUBLISH ON  /cmd_vel_unstamped }
 9. for teleop use this cmd
     ```bash
        ros2 run turtlebot3_teleop teleop_keyboard --ros-args --remap /cmd_vel:=/cmd_vel_unstamped
