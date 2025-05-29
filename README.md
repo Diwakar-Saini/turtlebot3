@@ -14,7 +14,7 @@ ROS 2 package for simulating TurtleBot3 in Gazebo Fortress with Ignition Bridge.
 1. Install ROS 2 dependencies:
    ```bash
    sudo apt update
-   sudo apt install ros-humble-desktop ros-humble-gazebo-ros-pkgs
+   sudo apt install ros-humble-desktop 
    ```
 2. CLONE THE PACKAGE
    ```bash
