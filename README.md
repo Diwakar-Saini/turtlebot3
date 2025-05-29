@@ -43,6 +43,17 @@ ROS 2 package for simulating TurtleBot3 in Gazebo Fortress with Ignition Bridge.
        cd turtlebot3
        colcon build
    ```
+
+{ if u get error like couldn't find turtlebot3_msgs: pls proceed with this commands}
+``` bash
+        cd turtlebot3
+        sudo apt-get install ros-${ROS_DISTRO}-turtlebot3-msgs
+        source /opt/ros/${ROS_DISTRO}/setup.bash
+        rosdep install --from-paths src --ignore-src -y
+        rm -rf build install log
+        colcon build
+```
+    
 8. Now we will look it is it really running on our system or not :)
    ```BASH
       source install/setup.bash
